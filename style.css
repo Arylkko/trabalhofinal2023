@@ -7,6 +7,7 @@ body {
     background: rgb(255, 211, 243);
     background: linear-gradient(180deg, rgba(255, 211, 243, 1) 0%, rgba(255, 219, 235, 1) 50%, rgba(213, 205, 255, 1) 100%);
     background-repeat: no-repeat;
+    height:100vh;
 }
 
 .bloco {
@@ -40,7 +41,7 @@ select {
 }
 
 .destaque {
-    color:#C98FFF;
+    color: #C98FFF;
 }
 
 .roxo {
@@ -56,6 +57,33 @@ select {
     color: white !important;
 }
 
-.gap{
-    gap:30px
+select {
+    display: block;
+    width: 100%
+}
+
+.gap {
+    gap: 30px
+}
+
+@media (max-width: 767px) {
+    .bloco {
+        margin: 1rem 3rem;
+        padding: 2rem 2rem;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.25rem;
+
+    }
+
+    .roxo,
+    p,
+    select {
+        font-size: 0.8rem;
+    }
 }
